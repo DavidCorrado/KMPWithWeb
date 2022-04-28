@@ -9,3 +9,4 @@ pluginManagement {
 rootProject.name = "KMPWithWeb"
 include(":androidApp")
 include(":shared")
+include(":webApp")
