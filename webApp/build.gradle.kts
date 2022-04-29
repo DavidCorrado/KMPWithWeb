@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
     implementation(kotlin("stdlib-js"))
-    //implementation(project(":shared"))
+    implementation(project(":shared"))
 }
 kotlin {
     js(IR) {
