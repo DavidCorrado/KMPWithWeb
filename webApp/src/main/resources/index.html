@@ -9,8 +9,15 @@
 <body>
 <div id="root"></div>
 <script>
+        webApp.com.example.kmpwithweb.PokemonList2ViewModel.prototype.getListAsync()
+.then((data) => {
         const element = document.getElementById("root");
-        element.innerHTML = webApp.com.example.kmpwithweb.Greeting.prototype.greeting();
+        element.innerHTML = data.map(pokemon => pokemon.name).join();
+})
+.catch((err) => {
+const element = document.getElementById("root");
+  element.innerHTML = err;
+})
 </script>
 </body>
 </html>
