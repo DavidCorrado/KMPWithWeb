@@ -9,7 +9,7 @@
 <body>
 <div id="root"></div>
 <script>
-        webApp.com.example.kmpwithweb.PokemonList2ViewModel.prototype.getListAsync()
+        webApp.com.example.kmpwithweb.getListAsync()
 .then((data) => {
         const element = document.getElementById("root");
         element.innerHTML = data.map(pokemon => pokemon.name).join();
